@@ -8,6 +8,12 @@ public class ControladorGeneral {
         this.vista = vista;
     }
 
+    VistaEstudiante vistaEst = new VistaEstudiante();
+    ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
+    
+    VistaProfesor vistaProf = new VistaProfesor();
+    ControladorProfesor Profesores = new ControladorProfesor(vistaProf);
+
     public void menuPrincipal() throws IOException{
         Integer opcion = 0;
 
@@ -16,14 +22,12 @@ public class ControladorGeneral {
             switch (vista.menu()) {
 
                 case 1: System.out.println();
-                    VistaEstudiante vistaEst = new VistaEstudiante();
-                    ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
+                    
                     Estudiantes.menuEstudiante();
                     break;
                 
                 case 2: System.out.println();
-                    VistaProfesor vistaProf = new VistaProfesor();
-                    ControladorProfesor Profesores = new ControladorProfesor(vistaProf);
+                    
                     Profesores.menuProfesor();
                     break;
 

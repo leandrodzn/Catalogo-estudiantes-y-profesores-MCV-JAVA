@@ -9,6 +9,8 @@ public class App {
         VistaGeneral vista = new VistaGeneral();
         ControladorGeneral Control = new ControladorGeneral(vista);
         Control.menuPrincipal();
+
+        
         
 
        /* VistaEstudiante vistaEst = new VistaEstudiante();
