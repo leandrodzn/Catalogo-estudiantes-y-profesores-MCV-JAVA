@@ -8,11 +8,11 @@ public class ControladorEstudiante {
 
     Scanner reader;
 
-    VistaEstudiante vista; 
+    VistaEstudiante vistaEst; 
 
-    ControladorEstudiante(VistaEstudiante vista){
+    ControladorEstudiante(VistaEstudiante vistaEst){
         estList = new ArrayList<Estudiante>();
-        this.vista = vista;
+        this.vistaEst = vistaEst;
     }
     
 
@@ -62,7 +62,7 @@ public class ControladorEstudiante {
 
 
     public void addEstudiante() throws IOException{ // Agregar estudiantes con atributos
-        estList.add(0, new Estudiante(vista.ingresarNombre(), vista.ingresarCalificacion(), vista.ingresarEdad(), vista.pedirMatricula()));
+        estList.add(0, new Estudiante(vistaEst.ingresarNombre(), vistaEst.ingresarCalificacion(), vistaEst.ingresarEdad(), vistaEst.pedirMatricula()));
     }    
     
     /*public Estudiante ListaEstudiantes(){ // Imprimir toda la lista de estudiantes
@@ -110,7 +110,7 @@ public class ControladorEstudiante {
      
     public int borrarEstudiante(int posicion){ // Borrar a un estudiante por matrícula
        if (posicion != -1) {
-        vista.imprimirInfoEstudiante(estList.get(posicion));
+        vistaEst.imprimirInfoEstudiante(estList.get(posicion));
         estList.remove(estList.get(posicion));
         return 1;
         // return;
@@ -123,9 +123,9 @@ public class ControladorEstudiante {
 
         if(posicion != -1){
 
-            vista.imprimirInfoEstudiante(informacionEstudiante(posicion));
+            vistaEst.imprimirInfoEstudiante(informacionEstudiante(posicion));
            
-            estList.get(posicion).setNombre(vista.ingresarNombre());
+            estList.get(posicion).setNombre(vistaEst.ingresarNombre());
             return estList.get(posicion);
             
         }
@@ -136,9 +136,9 @@ public class ControladorEstudiante {
 
         if(posicion != -1){
 
-            vista.imprimirInfoEstudiante(informacionEstudiante(posicion));
+            vistaEst.imprimirInfoEstudiante(informacionEstudiante(posicion));
 
-            estList.get(posicion).setEdad(vista.ingresarEdad());
+            estList.get(posicion).setEdad(vistaEst.ingresarEdad());
             return estList.get(posicion);
 
         }
@@ -149,9 +149,9 @@ public class ControladorEstudiante {
 
         if(posicion != -1){
 
-            vista.imprimirInfoEstudiante(informacionEstudiante(posicion));
+            vistaEst.imprimirInfoEstudiante(informacionEstudiante(posicion));
            
-            estList.get(posicion).setCalificacion(vista.ingresarCalificacion());
+            estList.get(posicion).setCalificacion(vistaEst.ingresarCalificacion());
             return estList.get(posicion);
             
         }
@@ -164,21 +164,21 @@ public class ControladorEstudiante {
 
         while (opcion != 4) {
             
-            switch (vista.menuEleccionModificarEstudiante()) {
+            switch (vistaEst.menuEleccionModificarEstudiante()) {
 
-                case 1: vista.imprimirModificacionNombre(modificarNombreEstudiante(obtEstudiantePorMatricula(vista.pedirMatricula())));
+                case 1: vistaEst.imprimirModificacionNombre(modificarNombreEstudiante(obtEstudiantePorMatricula(vistaEst.pedirMatricula())));
                     break;
     
-                case 2: vista.imprimirModificacionEdad(modificarEdadEstudiante(obtEstudiantePorMatricula(vista.pedirMatricula())));
+                case 2: vistaEst.imprimirModificacionEdad(modificarEdadEstudiante(obtEstudiantePorMatricula(vistaEst.pedirMatricula())));
                     break;
     
-                case 3: vista.imprimirModificacionCalificacion(modificarCalificacionEstudiante(obtEstudiantePorMatricula(vista.pedirMatricula())));
+                case 3: vistaEst.imprimirModificacionCalificacion(modificarCalificacionEstudiante(obtEstudiantePorMatricula(vistaEst.pedirMatricula())));
                     break;
 
                 case 4: opcion = 4;
                     break;
 
-                default: vista.mensajeOpcionDesconocida();
+                default: vistaEst.mensajeOpcionDesconocida();
                 break;
 
             }
@@ -191,25 +191,25 @@ public class ControladorEstudiante {
 
         while (opcion != 6) {
 
-            switch (vista.menu()) {
+            switch (vistaEst.menuEstudiante()) {
 
                 case 1: System.out.println();
                     addEstudiante();
                     break;
                 
                 case 2: System.out.println();
-                    vista.imprimirListaEstudiantes(estList);
+                    vistaEst.imprimirListaEstudiantes(estList);
                     break;
 
                 case 3:  System.out.println();
                     Integer aux;
-                    aux = vista.pedirMatricula();
-                    vista.imprimirInfoEstudiante(informacionEstudiante(obtEstudiantePorMatricula(aux)));
+                    aux = vistaEst.pedirMatricula();
+                    vistaEst.imprimirInfoEstudiante(informacionEstudiante(obtEstudiantePorMatricula(aux)));
                     break;
 
                 case 4: System.out.println();
-                    aux = vista.pedirMatricula();
-                    vista.notificacionBorradoEstudiante(borrarEstudiante(obtEstudiantePorMatricula(aux)));
+                    aux = vistaEst.pedirMatricula();
+                    vistaEst.notificacionBorradoEstudiante(borrarEstudiante(obtEstudiantePorMatricula(aux)));
                     break;
 
                 case 5: menuModificarEstudiante();
@@ -218,7 +218,7 @@ public class ControladorEstudiante {
                 case 6: opcion = 6;
                     break;
 
-                default: vista.mensajeOpcionDesconocida();
+                default: vistaEst.mensajeOpcionDesconocida();
             }
             
         }

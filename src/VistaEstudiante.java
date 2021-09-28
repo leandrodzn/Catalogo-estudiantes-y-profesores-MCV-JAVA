@@ -114,19 +114,19 @@ public class VistaEstudiante {
 
 
     
-    public Integer menu(){ // Menú principal
+    public Integer menuEstudiante(){ // Menú de estudiante
 
         reader = new Scanner(System.in);
 
         System.out.println();
-        System.out.println("---- Menú principal ----");
+        System.out.println("---- Menú de estudiante ----");
 
         System.out.println("[1] Agregar estudiante");
         System.out.println("[2] Desplegar lista de estudiantes");
         System.out.println("[3] Desplegar información de estudiante");
         System.out.println("[4] Borrar información de estudiante");
         System.out.println("[5] Modificar información de estudiante");
-        System.out.println("[6] Salir");
+        System.out.println("[6] Regresar a menú principal");
         System.out.print("Opción: ");
 
         return reader.nextInt();

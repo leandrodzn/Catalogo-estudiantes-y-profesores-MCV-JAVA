@@ -6,8 +6,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        VistaEstudiante vista = new VistaEstudiante();
-        ControladorEstudiante Estudiantes = new ControladorEstudiante(vista);
+        VistaEstudiante vistaEst = new VistaEstudiante();
+        ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
         Estudiantes.menuEstudiante();
 
 
