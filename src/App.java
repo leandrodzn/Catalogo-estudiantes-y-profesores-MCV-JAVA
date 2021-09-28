@@ -6,12 +6,20 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        VistaEstudiante vistaEst = new VistaEstudiante();
+        VistaGeneral vista = new VistaGeneral();
+        vista.menu();
+
+       /* VistaEstudiante vistaEst = new VistaEstudiante();
         ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
         Estudiantes.menuEstudiante();
         VistaProfesor vistaProf = new VistaProfesor();
         ControladorProfesor Profesores = new ControladorProfesor(vistaProf);
-        Profesores.menuProfesor();
+        Profesores.menuProfesor(); */
+
+        
+
+
+        
 
 
         /*Scanner reader = new Scanner(System.in);
