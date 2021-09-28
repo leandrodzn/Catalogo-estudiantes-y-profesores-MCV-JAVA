@@ -33,7 +33,7 @@ public class VistaProfesor {
     }
 
     
-    public void imprimirInfoProfesor(Estudiante obj1){ //Impresión de información de profesor
+    public void imprimirInfoProfesor(Profesor obj1){ //Impresión de información de profesor
         if (obj1 != null) {
             System.out.println("- Profesor encontrado -");
             System.out.println(obj1);
@@ -114,7 +114,7 @@ public class VistaProfesor {
 
 
     
-    public Integer menu(){ // Menú de estudiante
+    public Integer menuProfesor(){ // Menú de profesor
 
         reader = new Scanner(System.in);
 
