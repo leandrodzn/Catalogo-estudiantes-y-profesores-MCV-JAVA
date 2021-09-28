@@ -20,10 +20,6 @@ public class App {
 
         
 
-
-        
-
-
         /*Scanner reader = new Scanner(System.in);
        //BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
         ArrayList <Estudiante> estList = new ArrayList<Estudiante>();
