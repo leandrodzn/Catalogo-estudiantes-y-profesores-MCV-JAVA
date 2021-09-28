@@ -9,6 +9,9 @@ public class App {
         VistaEstudiante vistaEst = new VistaEstudiante();
         ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
         Estudiantes.menuEstudiante();
+        VistaProfesor vistaProf = new VistaProfesor();
+        ControladorProfesor Profesores = new ControladorProfesor(vistaProf);
+        Profesores.menuProfesor();
 
 
         /*Scanner reader = new Scanner(System.in);
