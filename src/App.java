@@ -7,7 +7,9 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         VistaGeneral vista = new VistaGeneral();
-        vista.menu();
+        ControladorGeneral Control = new ControladorGeneral(vista);
+        Control.menuPrincipal();
+        
 
        /* VistaEstudiante vistaEst = new VistaEstudiante();
         ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);

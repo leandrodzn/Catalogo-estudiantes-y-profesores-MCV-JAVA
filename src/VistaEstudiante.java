@@ -106,7 +106,7 @@ public class VistaEstudiante {
         System.out.println("[1] Modificar nombre de estudiante");
         System.out.println("[2] Modificar edad de estudiante");
         System.out.println("[3] Modificar calificación de estudiante");
-        System.out.println("[4] Regresar al menú principal");
+        System.out.println("[4] Regresar al menú de estudiante");
         System.out.print("Opción: ");
 
         return reader.nextInt();

@@ -106,7 +106,7 @@ public class VistaProfesor {
         System.out.println("[1] Modificar nombre de profesor");
         System.out.println("[2] Modificar edad de profesor");
         System.out.println("[3] Modificar salario de profesor");
-        System.out.println("[4] Regresar al menú principal");
+        System.out.println("[4] Regresar al menú de profesor");
         System.out.print("Opción: ");
 
         return reader.nextInt();
