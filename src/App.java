@@ -10,7 +10,7 @@ public class App {
         ControladorGeneral Control = new ControladorGeneral(vista);
         Control.menuPrincipal();
 
-        
+        //Estudiante: Leandro Angel Dzib Nauat
         
 
        /* VistaEstudiante vistaEst = new VistaEstudiante();
