@@ -4,7 +4,13 @@ Crea una aplicación para el control escolar de una escuela.
 
 Que contenga la clase *Persona* y sus subclases *Estudiante* y *Profesor*.
 
+### Menús
+
 Debe contener un *Menú Principal* donde se pueda acceder al *Menú para estudiantes* y al *Menú para profesores*.
+
+- Ir a menú de estudiantes
+- Ir a menú de profesores
+- Salir
 
 El *Menú para estudiantes* debe contener las opciones:
 
