@@ -3,6 +3,7 @@
 **Crea una aplicación para el control escolar de una escuela.**
 
 Que contenga la clase *Persona* y sus subclases *Estudiante* y *Profesor*. 
+
 La clase *Persona* debe contener los atribútos y los métodos en común de ambas subclases. Las clases *Estudiante* y *Profesor* deben tener sus atribútos y métodos que las hacen diferentes.
 
 ## Menús
