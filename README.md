@@ -8,7 +8,7 @@ Que contenga la clase *Persona* y sus subclases *Estudiante* y *Profesor*.
 
 Debe contener un *Menú Principal* donde se pueda acceder al *Menú para estudiantes* y al *Menú para profesores*.
 
-- Ir a menú de estudiantes
+- [1 ]Ir a menú de estudiantes
 - Ir a menú de profesores
 - Salir
 
