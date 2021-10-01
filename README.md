@@ -1,14 +1,15 @@
 # Control escolar
 
-Crea una aplicación para el control escolar de una escuela.
+**Crea una aplicación para el control escolar de una escuela.**
 
-Que contenga la clase *Persona* y sus subclases *Estudiante* y *Profesor*.
+Que contenga la clase *Persona* y sus subclases *Estudiante* y *Profesor*. 
+La clase *Persona* debe contener los atribútos y los métodos en común de ambas subclases. Las clases *Estudiante* y *Profesor* deben tener sus atribútos y métodos que las hacen diferentes.
 
 ### Menús
 
 Debe contener un *Menú Principal* donde se pueda acceder al *Menú para estudiantes* y al *Menú para profesores*.
 
-- [1] Ir a menú de estudiantes
+- Ir a menú de estudiantes
 - Ir a menú de profesores
 - Salir
 
