@@ -24,8 +24,8 @@ El *Menú para estudiantes* debe contener las opciones:
 
 El *Menú para profesores* debe contener las opciones:
 
-- [x] Agregar profesor
-- Desplegar la lista de todos los profesores
+1. Agregar profesor
+2. Desplegar la lista de todos los profesores
 - Desplegar la información de un profesor
 - Borrar información de un profesor
 - Modificar información de un profesor
