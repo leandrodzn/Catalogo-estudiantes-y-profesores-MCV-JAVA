@@ -9,10 +9,10 @@ public class ControladorGeneral {
     }
 
     VistaEstudiante vistaEst = new VistaEstudiante();
-    ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);
+    ControladorEstudiante Estudiantes = new ControladorEstudiante(vistaEst);  // Parte de los estudiantes
     
     VistaProfesor vistaProf = new VistaProfesor();
-    ControladorProfesor Profesores = new ControladorProfesor(vistaProf);
+    ControladorProfesor Profesores = new ControladorProfesor(vistaProf); //Parte de los profesores
 
     public void menuPrincipal() throws IOException{
         Integer opcion = 0;
@@ -23,7 +23,7 @@ public class ControladorGeneral {
 
                 case 1: System.out.println();
                     
-                    Estudiantes.menuEstudiante();
+                    Estudiantes.menuEstudiante(); 
                     break;
                 
                 case 2: System.out.println();
